@@ -1,0 +1,24 @@
+# Secrets - never commit
+.env
+.env.local
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Opt-in per-task debug trace (TaskProcessor.enable_logging); grows to GBs
+log.txt
+
+# Experiment outputs, traces, and cached model responses
+results/
+
+# Benchmark files and the notebook that generates them
+benchmark_group*.pmb
+task_generator.ipynb
+
+# Figure generation (not part of the code release)
+make_figures2.py
+convergence.py

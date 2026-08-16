@@ -1,0 +1,35 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.claude/
+
+# Environments and caches
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Not part of the code release
+references/
+Literature/
+docs/
+_removed/
+code_architecture.py
+make_figures.py
+
+# Experiment outputs and cached model responses
+results/
+log.txt
+
+# Benchmark data: the four 200-task benchmarks used in the paper
+data/*
+!data/refined_bench/
+data/refined_bench/*
+!data/refined_bench/scenario1/
+
+.DS_Store
